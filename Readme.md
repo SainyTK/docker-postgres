@@ -7,7 +7,7 @@
 On the db shell: `\list`
 4. Create a new database <br/>
 On the db shell: `CREATE DATABASE "DBNAME">`. Replace "DBNAME" with your database name.
-5. Exit shell
+5. Exit shell <br/>
 On the db shell: `exit`
 
 ## Notes
