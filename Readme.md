@@ -16,7 +16,7 @@ On the db shell: `psql -U postgres`
 4. List databases <br/>
 On the psql shell: `\list`
 4. Create a new database <br/>
-On the psql shell: `CREATE DATABASE "DBNAME"`. Replace "DBNAME" with your database name.
+On the psql shell: `CREATE DATABASE "DBNAME";`. Replace DBNAME with your database name (e.g., CREATE DATABASE "my-db";).
 5. Seed data with .sql file to db <br/>
 On the host terminal: `cat "path-to-sql-file" | docker compose exec -T db psql -U postgres -d "db_name"`. Replace "path-to-sql-file" to the relative path to sql file and "db-name" to the database name.
 6. Seed data with .dump file to db <br/>
@@ -30,6 +30,8 @@ On the db shell: `exit`
 
 ## Notes
 1. Username is `postgres`
+2. Password is `mysecretpassword`
+3. The full URL looks like this: `postgres://postgres:mysecretpassword@localhost/<db_name>`
 
 ## TODO
 - Complete the command lists (import data, list tables, show data)
